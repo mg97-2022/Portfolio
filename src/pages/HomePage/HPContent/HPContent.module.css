@@ -1,0 +1,48 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.middle h2 {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.middle .desc {
+  height: 50px;
+}
+.middle a {
+  display: inline-block;
+  color: var(--text-color);
+  padding: 1rem 3.5rem;
+  font-size: 1.7rem;
+}
+.middle a:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: var(--green);
+}
+.social {
+  position: relative;
+  top: 10rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 1rem 2rem;
+}
+.social a {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 3.5rem;
+  box-shadow: var(--box-shadow);
+  margin: 0.5rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+}
+.social a:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: var(--green);
+}

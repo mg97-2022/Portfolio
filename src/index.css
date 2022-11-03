@@ -1,0 +1,88 @@
+/* start general variables */
+:root {
+  --green: #27ae60;
+  --text-color: #444;
+  --light-color: #777;
+  --bg-color: #e6e6e6;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  --box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+  --box-shadow-inset: 0.4rem 0.4rem 1rem #ccc inset,
+    -0.4rem -0.4rem 1rem #fff inset;
+}
+/* end general variables */
+/* start general rules */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+}
+ul {
+  list-style: none;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-color);
+}
+body.active {
+  --text-color: #fff;
+  --light-color: #ddd;
+  --bg-color: #222;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.4);
+  --box-shadow: 0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333;
+  --box-shadow-inset: 0.4rem 0.4rem 1rem #111 inset,
+    -0.4rem -0.4rem 1rem #333 inset;
+}
+.section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-left: 35rem;
+  }
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3.5rem;
+  border-radius: 0.5rem;
+  /* font-size: 1.7rem; */
+  cursor: pointer;
+  background: none;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: var(--green);
+}
+/* end general rules */
