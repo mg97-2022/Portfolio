@@ -4,7 +4,7 @@ import ThemeComponent from "../ThemeComponent/ThemeComponent";
 import NavButton from "../NavComponent/NavButton/NavButton";
 import classes from "./Layout.module.css";
 
-const Layout: React.FC<{ children: any }> = ({ children }) => {
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [showNav, setShowNav] = useState(false);
   const showSideNavHandler = (): void => {
     setShowNav((prev: boolean): boolean => !prev);

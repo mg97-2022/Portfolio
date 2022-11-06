@@ -35,9 +35,9 @@
   display: inline-block;
   height: 4rem;
   width: 4rem;
-  line-height: 3.5rem;
   box-shadow: var(--box-shadow);
   margin: 0.5rem;
+  padding-top: 8px;
   font-size: 2rem;
   color: var(--text-color);
   border-radius: 0.5rem;

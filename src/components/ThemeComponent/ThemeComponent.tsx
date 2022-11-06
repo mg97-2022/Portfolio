@@ -1,27 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { BsFillMoonFill } from "react-icons/bs";
 import {GiSunflower} from 'react-icons/gi'
+import ThemeContext from "../../store/theme-context";
 import classes from "./ThemeComponent.module.css";
 
 const ThemeComponent = () => {
-  const [lightMode, setLightMode] = useState(true);
+  const theme = useContext(ThemeContext)
   const changeThemeHandler = (): void => {
-    setLightMode((prev: boolean): boolean => !prev);
+    theme.changeTheme()
   };
 
   useEffect(() => {
     const bodyElement = document.body;
-    if (lightMode) {
+    if (theme.lightTheme) {
       bodyElement.classList.remove("active");
     } else {
       bodyElement.classList.add("active");
     }
-  }, [lightMode]);
+  }, [theme.lightTheme]);
 
   return (
     <div className={classes.theme} onClick={changeThemeHandler}>
-      {lightMode && <BsFillMoonFill />}
-      {!lightMode && <GiSunflower />}
+      {theme.lightTheme && <BsFillMoonFill />}
+      {!theme.lightTheme && <GiSunflower />}
     </div>
   );
 };
