@@ -1,15 +1,17 @@
-import React from "react";
 import SectionHeading from "../../../components/SectionHeader/SectionHeading";
 import amazon from "../../../assets/amazon.png";
 import netflix from "../../../assets/netflix.png";
 import resto from "../../../assets/resto.png";
 import coffee from "../../../assets/coffee.png";
+import mg from "../../../assets/mg.png";
 import netLogo from "../../../assets/logos/netLogo.png";
 import amzLogo from "../../../assets/logos/amzLogo.png";
 import resLogo from "../../../assets/logos/resLogo.png";
 import coffLogo from "../../../assets/logos/coffLogo.png";
+import mgLogo from "../../../assets/logos/mgLogo.png";
 import Project from "./Project/Project";
-import classes from './ProjectsContent.module.css'
+import classes from "./ProjectsContent.module.css";
+
 const projects = [
   {
     img: netflix,
@@ -38,6 +40,13 @@ const projects = [
     logo: coffLogo,
     liveURL: "https://mg97-2022.github.io/Coffee-Shop/",
     githubURL: "https://github.com/mg97-2022/Coffee-Shop",
+  },
+  {
+    img: mg,
+    title: "MG97",
+    logo: mgLogo,
+    liveURL: "https://mg97-2022.github.io/MG97/",
+    githubURL: "https://github.com/mg97-2022/MG97",
   },
 ];
 

@@ -13,18 +13,18 @@ const HPContent = () => {
         <div className={classes.desc}>
           <Developer />
         </div>
-        <a className="btn" href="/">
+        <a href='Mohamed_Gamal_CV.pdf' download='Mohamed_Gamal_CV.pdf' className="btn">
           Download CV
         </a>
       </div>
       <div className={classes.social}>
-        <a href="https://www.facebook.com/MOHAMEDGAMALSAIED97/">
+        <a target='_blank' rel='noreferrer' href="https://www.facebook.com/MOHAMEDGAMALSAIED97/">
           <FaFacebookF />
         </a>
-        <a href="https://www.linkedin.com/in/mohamed-gamal-229ab71a5/">
+        <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/mohamed-gamal-229ab71a5/">
           <FaLinkedin />
         </a>
-        <a href="https://github.com/mg97-2022">
+        <a target='_blank' rel='noreferrer' href="https://github.com/mg97-2022">
           <AiFillGithub />
         </a>
       </div>
